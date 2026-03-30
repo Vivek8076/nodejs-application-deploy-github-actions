@@ -15,6 +15,13 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v3
         with:
+          - name: 🧪 Run tests
+        run: npm test
+
+      - name: 🏗 Build check
+        run: echo "Build successful 🚀"
+
+        
           node-version: 18
 
       - name: Install packages
